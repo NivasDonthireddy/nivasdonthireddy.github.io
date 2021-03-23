@@ -14472,7 +14472,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[288]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Tester</span> <span class="p">{</span>
@@ -14532,6 +14532,497 @@ a.anchor-link {
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>A-05</code></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Not solved Completely yet.......</span>
+<span class="kd">class</span> <span class="nc">Tester</span><span class="p">{</span>    
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">removeDuplicatesandSpaces</span><span class="p">(</span><span class="n">String</span> <span class="n">str</span><span class="p">){</span>
+        <span class="n">String</span> <span class="n">str1</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">str</span><span class="p">.</span><span class="na">length</span><span class="p">();</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">str</span><span class="p">.</span><span class="na">length</span><span class="p">();</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">==</span><span class="n">str</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">j</span><span class="p">)){</span>
+                    <span class="n">count_int</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+            
+        <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">str1</span><span class="p">);</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// String str = &quot;object oriented programming&quot;;</span>
+<span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;hello&quot;</span><span class="p">;</span>
+<span class="n">Tester</span> <span class="n">obj1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Tester</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">obj1</span><span class="p">.</span><span class="na">removeDuplicatesandSpaces</span><span class="p">(</span><span class="n">str</span><span class="p">));</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>hello
+null
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>Arrays - Assignments</code></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>A-01</code></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Teacher</span><span class="p">{</span>
+    <span class="n">String</span> <span class="n">teacherName</span><span class="p">;</span>
+    <span class="n">String</span> <span class="n">subject</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">salary</span><span class="p">;</span>
+    
+    <span class="kd">public</span> <span class="nf">Teacher</span><span class="p">(</span><span class="n">String</span> <span class="n">teacherName</span><span class="p">,</span><span class="n">String</span> <span class="n">subject</span><span class="p">,</span><span class="kt">double</span> <span class="n">salary</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">teacherName</span><span class="o">=</span><span class="n">teacherName</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">subject</span> <span class="o">=</span> <span class="n">subject</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">salary</span> <span class="o">=</span> <span class="n">salary</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getTeacherName</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">teacherName</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setTeacherName</span><span class="p">(</span><span class="n">String</span> <span class="n">teacherName</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">teacherName</span><span class="o">=</span><span class="n">teacherName</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSubject</span><span class="p">(</span><span class="n">String</span> <span class="n">subject</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">subject</span><span class="o">=</span><span class="n">subject</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getSubject</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">subject</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSalary</span><span class="p">(</span><span class="kt">double</span> <span class="n">salary</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">salary</span><span class="o">=</span><span class="n">salary</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getSalary</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">salary</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// inside main class</span>
+<span class="n">Teacher</span> <span class="n">t1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Teacher</span><span class="p">(</span><span class="s">&quot;Rekha david&quot;</span><span class="p">,</span><span class="s">&quot;Physics&quot;</span><span class="p">,</span><span class="mf">23500.0</span><span class="p">);</span>
+<span class="n">Teacher</span> <span class="n">t2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Teacher</span><span class="p">(</span><span class="s">&quot;Jeevana M&quot;</span><span class="p">,</span><span class="s">&quot;Java programming&quot;</span><span class="p">,</span><span class="mf">29500.0</span><span class="p">);</span>
+<span class="n">t2</span><span class="p">.</span><span class="na">setTeacherName</span><span class="p">(</span><span class="s">&quot;Mohana M&quot;</span><span class="p">);</span>
+<span class="n">t2</span><span class="p">.</span><span class="na">getTeacherName</span><span class="p">();</span>
+<span class="n">t2</span><span class="p">.</span><span class="na">getSalary</span><span class="p">();</span>
+<span class="n">t2</span><span class="p">.</span><span class="na">setSalary</span><span class="p">(</span><span class="mi">298730</span><span class="p">);</span>
+<span class="n">t2</span><span class="p">.</span><span class="na">getSalary</span><span class="p">();</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>298730.0</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>A-02</code></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[108]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Tester</span> <span class="p">{</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">double</span><span class="o">[]</span> <span class="nf">findDetails</span><span class="p">(</span><span class="kt">double</span><span class="o">[]</span> <span class="n">salary</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">count_less_avg</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">count_more_avg</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">sum</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">average</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">final_arr</span><span class="o">[]=</span><span class="k">new</span> <span class="kt">double</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">salary</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">sum</span> <span class="o">=</span> <span class="n">sum</span><span class="o">+</span><span class="n">salary</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">average</span> <span class="o">=</span> <span class="n">sum</span><span class="o">/</span><span class="n">salary</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">double</span> <span class="n">i</span><span class="p">:</span><span class="n">salary</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;</span><span class="n">average</span><span class="p">){</span>
+                <span class="n">count_less_avg</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="n">average</span><span class="p">){</span>
+                <span class="n">count_more_avg</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">final_arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]=</span><span class="n">average</span><span class="p">;</span>
+        <span class="n">final_arr</span><span class="o">[</span><span class="mi">1</span><span class="o">]=</span><span class="n">count_less_avg</span><span class="p">;</span>
+        <span class="n">final_arr</span><span class="o">[</span><span class="mi">2</span><span class="o">]=</span><span class="n">count_more_avg</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">final_arr</span><span class="p">;</span>     
+    <span class="p">}</span>
+<span class="p">}</span>       
+
+<span class="n">Tester</span> <span class="n">obj1</span><span class="o">=</span><span class="k">new</span> <span class="n">Tester</span><span class="p">();</span>
+<span class="kt">double</span><span class="o">[]</span> <span class="n">salary</span> <span class="o">=</span> <span class="p">{</span> <span class="mf">23500.0</span><span class="p">,</span> <span class="mf">25080.0</span><span class="p">,</span> <span class="mf">28760.0</span><span class="p">,</span> <span class="mf">22340.0</span><span class="p">,</span> <span class="mf">19890.0</span> <span class="p">};</span>
+<span class="kt">double</span><span class="o">[]</span> <span class="n">details</span> <span class="o">=</span> <span class="n">obj1</span><span class="p">.</span><span class="na">findDetails</span><span class="p">(</span><span class="n">salary</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Average salary: &quot;</span><span class="o">+</span> <span class="n">details</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Number of salaries greater than the average salary: &quot;</span><span class="o">+</span> <span class="n">details</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Number of salaries lesser than the average salary: &quot;</span><span class="o">+</span> <span class="n">details</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Average salary: 23914.0
+Number of salaries greater than the average salary: 2.0
+Number of salaries lesser than the average salary: 3.0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>A-03</code></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[109]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Tester</span> <span class="p">{</span>
+    
+   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">findLeapYears</span><span class="p">(</span><span class="kt">int</span> <span class="n">year</span><span class="p">){</span>
+       <span class="kt">int</span> <span class="n">years_arr</span><span class="o">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">15</span><span class="o">]</span><span class="p">;</span>
+       <span class="k">if</span><span class="p">(</span><span class="n">year</span><span class="o">%</span><span class="mi">400</span><span class="o">==</span><span class="mi">0</span> <span class="o">||</span> <span class="p">(</span><span class="n">year</span><span class="o">%</span><span class="mi">4</span><span class="o">==</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">year</span><span class="o">%</span><span class="mi">100</span><span class="o">!=</span><span class="mi">0</span><span class="p">)){</span>
+           <span class="n">years_arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]=</span><span class="n">year</span><span class="p">;</span>
+       <span class="p">}</span>
+       <span class="k">else</span><span class="p">{</span>
+           <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">year</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">year</span><span class="o">+</span><span class="mi">4</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+               <span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">%</span><span class="mi">400</span><span class="o">==</span><span class="mi">0</span> <span class="o">||</span> <span class="p">(</span><span class="n">i</span><span class="o">%</span><span class="mi">4</span><span class="o">==</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span><span class="o">%</span><span class="mi">100</span><span class="o">!=</span><span class="mi">0</span><span class="p">)){</span>
+                   <span class="n">years_arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]=</span><span class="n">i</span><span class="p">;</span>
+                   <span class="k">break</span><span class="p">;</span>
+               <span class="p">}</span>
+           <span class="p">}</span>
+       <span class="p">}</span>
+       <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">years_arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+       <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">years_arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+           <span class="n">sum</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="mi">4</span><span class="p">;</span>
+           <span class="n">years_arr</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="n">sum</span><span class="p">;</span>
+       <span class="p">}</span>
+       <span class="k">return</span> <span class="n">years_arr</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>    
+
+<span class="kt">int</span> <span class="n">year</span> <span class="o">=</span> <span class="mi">2000</span><span class="p">;</span>
+<span class="kt">int</span><span class="o">[]</span> <span class="n">leapYears</span><span class="p">;</span>
+<span class="n">Tester</span> <span class="n">obj1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Tester</span><span class="p">();</span>
+<span class="n">leapYears</span><span class="o">=</span><span class="n">obj1</span><span class="p">.</span><span class="na">findLeapYears</span><span class="p">(</span><span class="n">year</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">index</span><span class="o">&lt;</span><span class="n">leapYears</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">index</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+   <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">leapYears</span><span class="o">[</span><span class="n">index</span><span class="o">]+</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2000 2004 2008 2012 2016 2020 2024 2028 2032 2036 2040 2044 2048 2052 2056 </pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>A-04</code></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[223]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Student</span><span class="p">{</span>
+    <span class="kt">int</span><span class="o">[]</span> <span class="n">marks</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">[]</span> <span class="n">grade</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="nf">Student</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">marks</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">marks</span> <span class="o">=</span> <span class="n">marks</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">grade</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="mi">7</span><span class="o">]</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">findGrade</span><span class="p">(){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">marks</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">marks</span><span class="o">[</span><span class="n">i</span><span class="o">]&gt;=</span><span class="mi">92</span><span class="p">){</span>
+                <span class="n">grade</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="sc">&#39;E&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">marks</span><span class="o">[</span><span class="n">i</span><span class="o">]&gt;=</span><span class="mi">85</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="na">marks</span><span class="o">[</span><span class="n">i</span><span class="o">]&lt;</span><span class="mi">92</span><span class="p">){</span>
+                <span class="n">grade</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="sc">&#39;A&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">marks</span><span class="o">[</span><span class="n">i</span><span class="o">]&gt;=</span><span class="mi">70</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="na">marks</span><span class="o">[</span><span class="n">i</span><span class="o">]&lt;</span><span class="mi">85</span><span class="p">){</span>
+                <span class="n">grade</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="sc">&#39;B&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">marks</span><span class="o">[</span><span class="n">i</span><span class="o">]&gt;=</span><span class="mi">65</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="na">marks</span><span class="o">[</span><span class="n">i</span><span class="o">]&lt;</span><span class="mi">70</span><span class="p">){</span>
+                <span class="n">grade</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="sc">&#39;C&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">marks</span><span class="o">[</span><span class="n">i</span><span class="o">]&lt;</span><span class="mi">65</span><span class="p">){</span>
+                <span class="n">grade</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="sc">&#39;D&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">getMarks</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">marks</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setMarks</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">marks</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">marks</span> <span class="o">=</span> <span class="n">marks</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">char</span><span class="o">[]</span> <span class="nf">getGrade</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">grade</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setGrade</span><span class="p">(</span><span class="kt">char</span><span class="o">[]</span> <span class="n">grade</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">grade</span><span class="o">=</span><span class="n">grade</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span><span class="o">[]</span> <span class="n">marks</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">97</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">66</span> <span class="p">};</span> 
+<span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="n">marks</span><span class="p">);</span>
+<span class="n">student</span><span class="p">.</span><span class="na">findGrade</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Grades corresponding to the marks are : &quot;</span><span class="p">);</span>
+<span class="kt">char</span><span class="o">[]</span> <span class="n">grades</span> <span class="o">=</span> <span class="n">student</span><span class="p">.</span><span class="na">getGrade</span><span class="p">();</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">grades</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">index</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">grades</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Grades corresponding to the marks are : 
+B A E C B E C </pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>A-05</code></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Tester</span> <span class="p">{</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">findNumbers</span><span class="p">(</span><span class="kt">int</span> <span class="n">num1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">num2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">6</span><span class="o">]</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">sum</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">num1</span><span class="o">&lt;</span><span class="n">num2</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">num1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">num2</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">sum</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+            <span class="n">temp</span><span class="o">=</span><span class="n">i</span><span class="p">;</span>
+            <span class="k">while</span><span class="p">(</span><span class="n">temp</span><span class="o">!=</span><span class="mi">0</span><span class="p">){</span>
+                <span class="n">r</span><span class="o">=</span><span class="n">temp</span><span class="o">%</span><span class="mi">10</span><span class="p">;</span>
+                <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>
+                <span class="n">sum</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">+</span><span class="n">r</span><span class="p">;</span>
+            <span class="p">}</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">sum</span><span class="o">%</span><span class="mi">3</span><span class="o">==</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span><span class="o">%</span><span class="mi">5</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span>
+                    <span class="n">numbers</span><span class="o">[</span><span class="n">count</span><span class="o">]=</span><span class="n">i</span><span class="p">;</span>
+                    <span class="n">count</span><span class="o">=</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+                <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">numbers</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">//inside main</span>
+<span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+
+<span class="n">Tester</span> <span class="n">obj1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Tester</span><span class="p">();</span>
+<span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="n">obj1</span><span class="p">.</span><span class="na">findNumbers</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;There is no such number!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">index</span> <span class="o">&lt;=</span> <span class="n">numbers</span><span class="p">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">index</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>15
+30
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>A-06</code></p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">

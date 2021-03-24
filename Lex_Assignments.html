@@ -14617,7 +14617,7 @@ null
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Teacher</span><span class="p">{</span>
@@ -14657,13 +14657,17 @@ null
 <span class="p">}</span>
 
 <span class="c1">// inside main class</span>
-<span class="n">Teacher</span> <span class="n">t1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Teacher</span><span class="p">(</span><span class="s">&quot;Rekha david&quot;</span><span class="p">,</span><span class="s">&quot;Physics&quot;</span><span class="p">,</span><span class="mf">23500.0</span><span class="p">);</span>
-<span class="n">Teacher</span> <span class="n">t2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Teacher</span><span class="p">(</span><span class="s">&quot;Jeevana M&quot;</span><span class="p">,</span><span class="s">&quot;Java programming&quot;</span><span class="p">,</span><span class="mf">29500.0</span><span class="p">);</span>
-<span class="n">t2</span><span class="p">.</span><span class="na">setTeacherName</span><span class="p">(</span><span class="s">&quot;Mohana M&quot;</span><span class="p">);</span>
-<span class="n">t2</span><span class="p">.</span><span class="na">getTeacherName</span><span class="p">();</span>
-<span class="n">t2</span><span class="p">.</span><span class="na">getSalary</span><span class="p">();</span>
-<span class="n">t2</span><span class="p">.</span><span class="na">setSalary</span><span class="p">(</span><span class="mi">298730</span><span class="p">);</span>
-<span class="n">t2</span><span class="p">.</span><span class="na">getSalary</span><span class="p">();</span>
+<span class="n">Teacher</span> <span class="n">t1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Teacher</span><span class="p">(</span><span class="s">&quot;Alex&quot;</span><span class="p">,</span><span class="s">&quot;Java Fundamentals&quot;</span><span class="p">,</span><span class="mi">1200L</span><span class="p">);</span>
+<span class="n">Teacher</span> <span class="n">t2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Teacher</span><span class="p">(</span><span class="s">&quot;John&quot;</span><span class="p">,</span><span class="s">&quot;RDBMS&quot;</span><span class="p">,</span><span class="mi">800L</span><span class="p">);</span>
+<span class="n">Teacher</span> <span class="n">t3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Teacher</span><span class="p">(</span><span class="s">&quot;Sam&quot;</span><span class="p">,</span><span class="s">&quot;Networking&quot;</span><span class="p">,</span><span class="mi">500L</span><span class="p">);</span>
+<span class="n">Teacher</span> <span class="n">t4</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Teacher</span><span class="p">(</span><span class="s">&quot;Maria&quot;</span><span class="p">,</span><span class="s">&quot;Python&quot;</span><span class="p">,</span><span class="mi">900L</span><span class="p">);</span>
+
+<span class="n">Teacher</span> <span class="n">t_arr</span><span class="o">[]</span> <span class="o">=</span> <span class="p">{</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">,</span><span class="n">t3</span><span class="p">,</span><span class="n">t4</span><span class="p">};</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">Teacher</span> <span class="n">i</span><span class="p">:</span><span class="n">t_arr</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Name : &quot;</span><span class="o">+</span><span class="n">i</span><span class="p">.</span><span class="na">getTeacherName</span><span class="p">()</span><span class="o">+</span><span class="s">&quot;, &quot;</span><span class="o">+</span><span class="s">&quot;Subject : &quot;</span><span class="o">+</span><span class="n">i</span><span class="p">.</span><span class="na">getSubject</span><span class="p">()</span><span class="o">+</span><span class="s">&quot;, &quot;</span><span class="o">+</span><span class="s">&quot;Salary : &quot;</span><span class="o">+</span><span class="n">i</span><span class="p">.</span><span class="na">getSalary</span><span class="p">());</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+<span class="p">}</span>
 </pre></div>
 
      </div>
@@ -14679,15 +14683,16 @@ null
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>298730.0</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Name : Alex, Subject : Java Fundamentals, Salary : 1200.0
+Name : John, Subject : RDBMS, Salary : 800.0
+Name : Sam, Subject : Networking, Salary : 500.0
+Name : Maria, Subject : Python, Salary : 900.0
+</pre>
 </div>
-
 </div>
 
 </div>

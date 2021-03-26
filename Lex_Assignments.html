@@ -15028,6 +15028,288 @@ B A E C B E C </pre>
 <p><code>A-06</code></p>
 
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><hr>`</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>Encapsulation - Assignment 2</code></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">MovieTicket</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">movieId</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">noOfSeats</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">costPerTicket</span><span class="p">;</span>
+    
+    <span class="n">MovieTicket</span><span class="p">(</span><span class="kt">int</span> <span class="n">movieId</span><span class="p">,</span><span class="kt">int</span> <span class="n">noOfSeats</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">movieId</span><span class="o">=</span><span class="n">movieId</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">noOfSeats</span><span class="o">=</span><span class="n">noOfSeats</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">setCostPerTicket</span><span class="p">();</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getMovieId</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">movieId</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setMovieId</span><span class="p">(</span><span class="kt">int</span> <span class="n">movieId</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">movieId</span><span class="o">=</span><span class="n">movieId</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setNoOfSeats</span><span class="p">(</span><span class="kt">int</span> <span class="n">noOfSeats</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">noOfSeats</span><span class="o">=</span><span class="n">noOfSeats</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getNoOfSeats</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">noOfSeats</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setCostPerTicket</span><span class="p">(){</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">movieId</span><span class="o">==</span><span class="mi">111</span><span class="p">){</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">costPerTicket</span><span class="o">=</span><span class="mi">7</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">movieId</span><span class="o">==</span><span class="mi">112</span><span class="p">){</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">costPerTicket</span><span class="o">=</span><span class="mi">8</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">movieId</span><span class="o">==</span><span class="mi">113</span><span class="p">){</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">costPerTicket</span> <span class="o">=</span> <span class="mf">8.5</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span><span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">costPerTicket</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getCostPerTicket</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">costPerTicket</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">calculateTotalAmount</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="p">((</span><span class="k">this</span><span class="p">.</span><span class="na">costPerTicket</span><span class="o">*</span><span class="k">this</span><span class="p">.</span><span class="na">noOfSeats</span><span class="p">)</span><span class="o">*</span><span class="mf">1.02</span><span class="p">);</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="n">MovieTicket</span> <span class="n">movieTicket</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MovieTicket</span><span class="p">(</span><span class="mi">112</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+<span class="kt">double</span> <span class="n">amount</span> <span class="o">=</span> <span class="n">movieTicket</span><span class="p">.</span><span class="na">calculateTotalAmount</span><span class="p">();</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">amount</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Sorry! Please enter valid movie Id and number of seats&quot;</span><span class="p">);</span>
+<span class="k">else</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Total amount for booking : $&quot;</span> <span class="o">+</span> <span class="n">Math</span><span class="p">.</span><span class="na">round</span><span class="p">(</span><span class="n">amount</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mf">100.0</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Total amount for booking : $24.48
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>Strings</code></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Need to know what is the difference between these two<br>
+<img src="data:image/png;base64,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" alt="image.png"></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Tester</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">removeWhiteSpaces</span><span class="p">(</span><span class="n">String</span> <span class="n">str</span><span class="p">){</span>
+        <span class="n">String</span> <span class="n">str1</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">str</span><span class="p">.</span><span class="na">length</span><span class="p">();</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">!=</span><span class="sc">&#39; &#39;</span><span class="p">){</span>
+                <span class="n">str1</span> <span class="o">=</span> <span class="n">str1</span><span class="o">+</span><span class="n">str</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">str1</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;Hello   How are you   &quot;</span><span class="p">;</span>
+<span class="n">Tester</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Tester</span><span class="p">();</span>
+<span class="n">str</span> <span class="o">=</span> <span class="n">obj</span><span class="p">.</span><span class="na">removeWhiteSpaces</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>HelloHowareyou
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>Array - quiz</code>  -- Questions 7 &amp; 8 are pending to attempt</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>Static</code></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Bill</span><span class="p">{</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">counter</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">billId</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">paymentMode</span><span class="p">;</span>
+    
+    <span class="kd">static</span><span class="p">{</span>
+        <span class="n">counter</span><span class="o">=</span><span class="mi">9000</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="nf">Bill</span><span class="p">(</span><span class="n">String</span> <span class="n">paymentMode</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">paymentMode</span> <span class="o">=</span> <span class="n">paymentMode</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">billId</span> <span class="o">=</span> <span class="s">&quot;B&quot;</span><span class="o">+</span> <span class="o">++</span><span class="n">counter</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getBillId</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">billId</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setBillId</span><span class="p">(</span><span class="n">String</span> <span class="n">billId</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">billId</span> <span class="o">=</span> <span class="n">billId</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getPaymentMode</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">paymentMode</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setPaymentMode</span><span class="p">(</span><span class="n">String</span> <span class="n">paymentMode</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">paymentMode</span> <span class="o">=</span> <span class="n">paymentMode</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getCounter</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">counter</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    
+    
+<span class="p">}</span>
+
+<span class="n">Bill</span> <span class="n">bill1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bill</span><span class="p">(</span><span class="s">&quot;DebitCard&quot;</span><span class="p">);</span>
+<span class="n">Bill</span> <span class="n">bill2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bill</span><span class="p">(</span><span class="s">&quot;PayPal&quot;</span><span class="p">);</span>
+
+<span class="c1">//Create more objects and add them to the bills array for testing your code</span>
+
+<span class="n">Bill</span><span class="o">[]</span> <span class="n">bills</span> <span class="o">=</span> <span class="p">{</span> <span class="n">bill1</span><span class="p">,</span> <span class="n">bill2</span><span class="p">};</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">Bill</span> <span class="n">bill</span> <span class="p">:</span> <span class="n">bills</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Bill Details&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Bill Id: &quot;</span> <span class="o">+</span> <span class="n">bill</span><span class="p">.</span><span class="na">getBillId</span><span class="p">());</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Payment method: &quot;</span> <span class="o">+</span> <span class="n">bill</span><span class="p">.</span><span class="na">getPaymentMode</span><span class="p">());</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Bill Details
+Bill Id: B9001
+Payment method: DebitCard
+
+Bill Details
+Bill Id: B9002
+Payment method: PayPal
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
